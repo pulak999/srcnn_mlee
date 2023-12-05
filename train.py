@@ -39,7 +39,7 @@ model_path = os.path.join(ckpt_dir, f"SRCNN-{architecture}.h5")
 
 dataset_dir = "dataset"
 lr_crop_size = 33
-hr_crop_size = 17
+hr_crop_size = 19
 #if architecture == "935":
     #hr_crop_size = 19
 #elif architecture == "955":
