@@ -20,7 +20,7 @@ def SRCNN9335():
     X_in = Input(shape=(None, None, 3))
     X = Conv2D(filters=64, kernel_size=9, padding='valid', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X_in)
-    X = Conv2D(filters=32, kernel_size=3, padding='valid', activation='relu',
+    X = Conv2D(filters=32, kernel_size=3, padding='same', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X)
     X = Conv2D(filters=32, kernel_size=3, padding='valid', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X)
@@ -34,9 +34,9 @@ def SRCNN93335():
     X_in = Input(shape=(None, None, 3))
     X = Conv2D(filters=64, kernel_size=9, padding='valid', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X_in)
-    X = Conv2D(filters=32, kernel_size=3, padding='valid', activation='relu',
+    X = Conv2D(filters=32, kernel_size=3, padding='same', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X)
-    X = Conv2D(filters=32, kernel_size=3, padding='valid', activation='relu',
+    X = Conv2D(filters=32, kernel_size=3, padding='same', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X)
     X = Conv2D(filters=32, kernel_size=3, padding='valid', activation='relu',
                kernel_initializer=RandomNormal(mean=0.0, stddev=0.001))(X)
